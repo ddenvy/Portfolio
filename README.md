@@ -152,6 +152,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Danil Lobanov**
 - Email: danil.lobanov@outlook.com
+- LinkedIn: [linkedin.com/in/envydany](https://www.linkedin.com/in/envydany/)
 - Telegram: [@envydany](https://t.me/envydany)
 - GitHub: [@envydany](https://github.com/envydany)
 

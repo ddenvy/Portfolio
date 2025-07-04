@@ -18,10 +18,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000);
     }
 
-    // Initialize animations
-    initScrollAnimations();
-    initTypingAnimation();
+    // Ensure content is visible immediately
+    showAllContent();
+
+    // Initialize animations with delay
+    setTimeout(() => {
+        initScrollAnimations();
+        initTypingAnimation();
+    }, 100);
 });
+
+// Function to ensure all content is visible
+function showAllContent() {
+    const elements = document.querySelectorAll('.about-content, .skills-grid, .contact-content, .timeline-item, .skill-category, .about-text, .contact-info, .skill-tag, .languages');
+    
+    elements.forEach(el => {
+        if (el) {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+            el.style.visibility = 'visible';
+        }
+    });
+    
+    console.log('All content made visible');
+}
 
 // Mobile Navigation Toggle
 navToggle.addEventListener('click', () => {
@@ -125,23 +145,29 @@ function initScrollAnimations() {
                 if (entry.target.classList.contains('stat')) {
                     animateCounter(entry.target);
                 }
+                
+                // Animate other elements
+                setTimeout(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }, 100);
             }
         });
     }, observerOptions);
 
-    // Observe elements for animation
-    document.querySelectorAll('.timeline-item, .skill-category, .stat, .about-text, .contact-content').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
+    // Observe elements for animation (but don't hide them initially)
+    document.querySelectorAll('.timeline-item, .skill-category, .stat, .about-text, .contact-content, .about-content, .skills-grid, .contact-info').forEach(el => {
+        // Don't hide the elements initially
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
 
-    // Skill tags animation setup
+    // Skill tags animation setup (but keep them visible)
     document.querySelectorAll('.skill-tag').forEach(tag => {
-        tag.style.opacity = '0';
-        tag.style.transform = 'translateY(20px)';
         tag.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        // Keep skill tags visible
+        tag.style.opacity = '1';
+        tag.style.transform = 'translateY(0)';
     });
 }
 
@@ -259,7 +285,7 @@ document.querySelectorAll('.skill-tag').forEach(tag => {
 document.querySelectorAll('.contact-link').forEach(link => {
     link.addEventListener('mouseenter', () => {
         const icon = link.querySelector('i');
-        icon.style.transform = 'scale(1.2) rotate(5deg)';
+        icon.style.transform = 'scale(1.1) rotate(10deg)';
         icon.style.transition = 'transform 0.3s ease';
     });
     
@@ -329,28 +355,43 @@ window.addEventListener('scroll', throttle(() => {
     updateActiveNavigation();
 }, 100));
 
-// Add loading animation to body
-document.body.style.opacity = '0';
+// Ensure body is visible
+document.body.style.opacity = '1';
 document.body.style.transition = 'opacity 0.5s ease';
 
 window.addEventListener('load', () => {
     document.body.style.opacity = '1';
+    // Double-check content visibility
+    showAllContent();
 });
+
+// Backup function to ensure content is always visible
+setTimeout(() => {
+    showAllContent();
+    console.log('Backup content display executed');
+}, 1000);
+
+// Another backup after 3 seconds
+setTimeout(() => {
+    showAllContent();
+    console.log('Final backup content display executed');
+}, 3000);
 
 // Console message for developers
 console.log(`
 🚀 Welcome to Danil Lobanov's Portfolio!
 🔧 Built with HTML, CSS, and JavaScript
-💼 Senior C# Developer with 3+ years of experience
+💼 Senior C# (.NET) Developer with 3+ years of experience
 📧 Contact: danil.lobanov@outlook.com
-🔗 Telegram: @envydany
+🔗 LinkedIn: https://www.linkedin.com/in/envydany/
+📱 Telegram: @envydany
 
 Site features:
-✨ Modern responsive design
-🎨 CSS animations and transitions
+✨ Modern responsive design with C# branding
+🎨 CSS animations and gradient effects
 📱 Mobile-first approach
 🎯 Smooth scrolling navigation
-🔥 Interactive elements
+🔥 Interactive elements with hover effects
 
-Looking for a talented developer? Let's connect!
+Looking for a talented C# developer? Let's connect!
 `);
