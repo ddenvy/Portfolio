@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danil Lobanov - Senior C# Developer</title>
+    <meta name="description" content="Senior C# Developer with 3+ years of experience in scalable SaaS products and enterprise systems">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Danil Lobanov</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Danil Lobanov</span>
+                    </h1>
+                    <p class="hero-subtitle">Senior C# Developer</p>
+                    <p class="hero-description">
+                        .NET, ASP.NET Core, PostgreSQL, Docker specialist with 3+ years of experience 
+                        in building scalable SaaS products and enterprise systems
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#experience" class="btn btn-secondary">View My Work</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-avatar">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a passionate C# developer with over 3 years of experience in creating scalable SaaS products 
+                            and enterprise systems (CRM, ERP). I specialize in microservices architecture, REST API development, 
+                            gRPC, and integration with message brokers (RabbitMQ, Kafka).
+                        </p>
+                        <p>
+                            I've been involved in developing and launching CRM systems for HR process automation, 
+                            eCommerce admin panels, and task management systems, which reduced errors by 40% and accelerated 
+                            feature delivery cycles by 60%.
+                        </p>
+                        <p>
+                            Currently pursuing a Master's degree in Software Engineering at NRNU MEPhI (National Research Nuclear University).
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">60%</div>
+                            <div class="stat-label">Faster Delivery</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">40%</div>
+                            <div class="stat-label">Error Reduction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Mar 2023 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Senior C# Developer</h3>
+                            <h4>Valletta Software Development LTD</h4>
+                            <p class="location">Malta (Remote)</p>
+                            <p class="description">
+                                International IT company specializing in SaaS products and enterprise systems development 
+                                for clients from Europe, Asia, and the Middle East.
+                            </p>
+                            <div class="project">
+                                <h5>Project: CRM System for HR Process Automation</h5>
+                                <ul>
+                                    <li>Developed and maintained backend logic for candidate management and notification modules (C#, .NET Core)</li>
+                                    <li>Designed REST API for CRUD operations with candidate data</li>
+                                    <li>Implemented notification microservice with asynchronous messaging via email (SMTP) and Telegram API using RabbitMQ and MassTransit</li>
+                                    <li>Optimized PostgreSQL queries, improving analytical report generation by 25% through indexing and Redis caching</li>
+                                    <li>Wrote unit and integration tests (xUnit, NSubstitute, FluentAssertions), achieving 60% code coverage</li>
+                                    <li>Participated in CI/CD automation using Docker and GitHub Actions, reducing deployment time from 10 to 3 minutes</li>
+                                    <li>Implemented Swagger for API documentation, simplifying onboarding for new developers</li>
+                                </ul>
+                            </div>
+                            <div class="achievements">
+                                <span class="achievement">35% faster notifications</span>
+                                <span class="achievement">20% fewer delivery errors</span>
+                                <span class="achievement">40% fewer production bugs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sep 2021 - Feb 2023</div>
+                        <div class="timeline-content">
+                            <h3>C# Developer</h3>
+                            <h4>DKH.Commerce / Task Management System</h4>
+                            <p class="description">
+                                SaaS solutions development company for eCommerce and task management.
+                            </p>
+                            <div class="project">
+                                <h5>Project: Task Management System (Microservices Architecture)</h5>
+                                <ul>
+                                    <li>Developed 4 microservices using C#, .NET Core, and gRPC</li>
+                                    <li>Applied Clean Architecture principles, ensuring code readability and testability</li>
+                                    <li>Set up modular and integration testing (xUnit, NSubstitute), achieving 60% coverage</li>
+                                    <li>Implemented Swagger for API documentation, improving developer onboarding</li>
+                                    <li>Participated in CI/CD pipeline setup with Docker and GitHub Actions</li>
+                                </ul>
+                            </div>
+                            <div class="achievements">
+                                <span class="achievement">30% faster inter-service communication</span>
+                                <span class="achievement">40% fewer production bugs</span>
+                                <span class="achievement">Simplified onboarding process</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Backend Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">.NET Core</span>
+                            <span class="skill-tag">ASP.NET Core</span>
+                            <span class="skill-tag">Entity Framework Core</span>
+                            <span class="skill-tag">REST API</span>
+                            <span class="skill-tag">gRPC</span>
+                            <span class="skill-tag">GraphQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Databases</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">SQL Server</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Redis</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Message Brokers</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">RabbitMQ</span>
+                            <span class="skill-tag">Kafka</span>
+                            <span class="skill-tag">MassTransit</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps & Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">Azure DevOps</span>
+                            <span class="skill-tag">Jenkins</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Testing & Quality</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">xUnit</span>
+                            <span class="skill-tag">NSubstitute</span>
+                            <span class="skill-tag">Moq</span>
+                            <span class="skill-tag">FluentAssertions</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Architecture & Patterns</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Clean Architecture</span>
+                            <span class="skill-tag">Domain-Driven Design</span>
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">CQRS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="languages">
+                    <h3>Languages</h3>
+                    <div class="language-items">
+                        <div class="language-item">
+                            <span class="language-name">English</span>
+                            <span class="language-level">C1</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Chinese</span>
+                            <span class="language-level">B1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p class="contact-description">
+                            I'm always open to discussing new opportunities, 
+                            interesting projects, or just having a chat about technology.
+                        </p>
+                        <div class="contact-links">
+                            <a href="mailto:danil.lobanov@outlook.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>danil.lobanov@outlook.com</span>
+                            </a>
+                            <a href="https://t.me/envydany" class="contact-link" target="_blank">
+                                <i class="fab fa-telegram"></i>
+                                <span>@envydany</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Danil Lobanov. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="mailto:danil.lobanov@outlook.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://t.me/envydany" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

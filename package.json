@@ -1,0 +1,31 @@
+{
+  "name": "danil-lobanov-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Danil Lobanov - Senior C# Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "gh-pages -d .",
+    "dev": "npx live-server --port=3000"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "csharp",
+    "dotnet",
+    "web"
+  ],
+  "author": "Danil Lobanov <danil.lobanov@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.1.0",
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/envydany/portfolio"
+  },
+  "homepage": "https://envydany.github.io/portfolio"
+} 
